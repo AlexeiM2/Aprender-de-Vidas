@@ -76,6 +76,7 @@
                 <tr>
                     <th>ID</th>
                     <th>Nombre</th>
+                    <th>Descripcion</th>
                     <th>Precio</th>
                 </tr>
                 <% 

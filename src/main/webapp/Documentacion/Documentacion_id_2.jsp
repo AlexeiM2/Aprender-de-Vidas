@@ -15,6 +15,7 @@
     	curso.obtenerCursoPorId(Integer.parseInt("2"));
      %>
     <script>
+	   
         var idInfoActual = '<%= idInfoActual %>';
         var idCurso = '<%= curso.getIdCurso() %>';
         function irADocumentacion() {
@@ -61,9 +62,10 @@
     <header>
         <h1>Cursos</h1>
     </header>
+    <input  type="submit" value="Daltonismo" onclick="cargarEstiloDaltonismo()">
     <nav>
         <div class="enlaces">
-            <a href="/Examen/home.jsp">Inicio</a>
+            <a href="../home.jsp">Inicio</a>
             <a href="/Examen/perfil.jsp">Perfil</a>
             <a href="/Examen/index.jsp">Cerrar Sesión</a>
         </div>
@@ -85,5 +87,11 @@
     <footer>
         <p>© 2024 Aprender de la vida</p>
     </footer>
+    	<script>
+	        function cargarEstiloDaltonismo() {
+	            var stylesheet = document.getElementById('stylesheet');
+	            stylesheet.href = '../styledalto.css'; 
+	        }
+	    </script>
 </body>
 </html>
