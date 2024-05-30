@@ -44,12 +44,20 @@
 		            <form action="login.jsp" method="post">
 		                <input type="submit" value="Iniciar Sesión">
 		            </form>
+		            
+		            <p>Eres acaso un invitado? dirijete con este boton</p>
+		
+		            <form action="invitado.jsp" method="post">
+		                <input type="submit" value="Invitado">
+		            </form>
 		        </div>
 				
 		        <div class="image-container">
 		            <img src="source/pexels-julia-m-cameron-4144533.jpg" alt="Imagen 1" style="max-width: 100%; height: auto;">
 		        </div>
 		    </div>
+		    
+		    
             	
         <footer>
         
