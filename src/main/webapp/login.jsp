@@ -11,7 +11,7 @@
 <body>
     
     <header>
-        <h1>Aprender de Vidas</h1>
+        <h2 class="destacado">Aprender de Vidas</h2>
     </header>
 
     <div style="opacity: 0.8;" class="form-container"><br>
