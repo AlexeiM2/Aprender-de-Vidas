@@ -26,12 +26,19 @@
             <% 
                 // Obtener datos del usuario desde el objeto session
                 Usuario user = (Usuario) session.getAttribute("usuario");
+            	String TipoU = null;
                 if (user != null) {
+                	if(user.getPerfilId()==2){
+                		TipoU="Administrador";
+                	}else{
+                		TipoU="Cliente";
+                	}
+                	
             %>
                 <p>Nombre: <%= user.getNombre() %></p>
                 <p>Estado Civil: <%= user.Cambiar_estado(user.getEstadoId()) %></p>
                 <p>Correo Electrónico: <%= user.getCorreo() %></p>
-                <p>Tipo de Usuario: Cliente</p>
+                <p>Tipo de Usuario: <%= TipoU %></p>
                 <form action="Cambiarclave.jsp" method="post">
 		                <input type="submit" value="Cambiar Contraseña">
 		        </form>
@@ -42,7 +49,18 @@
       </div>
 
     <footer>
-        <p>© 2024 Aprender de la vida</p>
+        
+                <a href="https://es-la.facebook.com/">
+                    <img src="./source//ICONOS/facebook.png" alt="" height="30px" width=auto>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="./source//ICONOS/instagram.png" alt="" height="30px" width=auto>
+                </a>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FInicio%2F">
+                    <img src="./source//ICONOS/twitter.png" alt="" height="30px" width=auto>
+                </a>
+         
+         <p>© 2024 Aprender de la vida</p>
     </footer>
 
 </body>

@@ -52,6 +52,17 @@ public class Cursos {
             e.printStackTrace();
         }
     }
+    
+    public void eliminar(int idProducto) {
+	    conexion obj = new conexion();
+	    String sql = "DELETE FROM tb_cursos WHERE idcurso = " + idProducto;
+
+	    try {
+	        obj.consulta(sql);
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+	}
 
 
 

@@ -90,7 +90,7 @@ public class Usuario {
                 int perfilId = rs.getInt("id_per");
                
                 if (perfilId == 2) { 
-                    result = "login.jsp";
+                    result = "admin.jsp";
                 } else if (perfilId == 1) { 
                     result = "home.jsp";
                 } else if (perfilId == 3){

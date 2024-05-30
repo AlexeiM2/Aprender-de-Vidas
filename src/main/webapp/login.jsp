@@ -67,7 +67,19 @@
     %>
 
     <footer>
-        <p>© 2024 Aprender de la vida</p>
+        
+                <a href="https://es-la.facebook.com/">
+                    <img src="./source//ICONOS/facebook.png" alt="" height="30px" width=auto>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="./source//ICONOS/instagram.png" alt="" height="30px" width=auto>
+                </a>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FInicio%2F">
+                    <img src="./source//ICONOS/twitter.png" alt="" height="30px" width=auto>
+                </a>
+         
+         
+         <p>© 2024 Aprender de la vida</p>
     </footer>
 </body>
 </html>

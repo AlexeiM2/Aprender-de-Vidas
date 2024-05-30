@@ -25,15 +25,17 @@
                 <a href="index.jsp" >Cerrar Sesión</a>
             </div>
         </nav>
-    <form method="GET" action="Listado.jsp">
+    		<form method="GET" action="Listado.jsp">
                 <select name="category">
                     
-                    <% 
+             <% 
                     conexion con = new conexion();
                     ResultSet rsCategory = con.consulta("SELECT * FROM tb_cursos");
                     while (rsCategory.next()) {
                         int categoryId = rsCategory.getInt("idcurso");
                         String categoryName = rsCategory.getString("nombrecurso");
+                       
+
                     %>
                     <option value="<%= categoryId %>"><%= categoryName %></option>
                     <% } %>
@@ -42,9 +44,10 @@
                 <button type="submit">Buscar</button>
             </form>
 
-  	<% 
+  			<% 
             String categoryIdParam = request.getParameter("category");
             String productNameParam = request.getParameter("productName");
+            
             
             if ((categoryIdParam != null && !categoryIdParam.isEmpty()) || (productNameParam != null && !productNameParam.isEmpty())) {
                 String query = "SELECT * FROM tb_cursos WHERE 1=1";
@@ -70,6 +73,8 @@
                     }
                     
                     if (!results.isEmpty()) {
+                    	
+                
             %>
             <h2>Resultados de la búsqueda:</h2>
             <table border="1">
@@ -80,14 +85,23 @@
                     <th>Precio</th>
                 </tr>
                 <% 
+                
                     for (String[] result : results) {
+                    	 String doc = "Documentacion/Documentacion_id_" + result[0]  + ".jsp";
                 %>
                 <tr>
                     <td><%= result[0] %></td>
                     <td><%= result[1] %></td>
                     <td><%= result[2] %></td>
-                    <td><%= result[3] %></td>                    
+                    <td><%= result[3] %></td>
+                    <td> <form action="<%= doc %>" method="post">
+				                <input type="submit" value="Comenzar Curso">
+						 </form>
+					</td>    
+                                    
                 </tr>
+                
+                
                 <% 
                     }
                 %>
@@ -101,8 +115,20 @@
                 }
             }
             %>
+           
     <footer>
-        <p>© 2024 Aprender de la vida</p>
+        
+                <a href="https://es-la.facebook.com/">
+                    <img src="./source//ICONOS/facebook.png" alt="" height="30px" width=auto>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="./source//ICONOS/instagram.png" alt="" height="30px" width=auto>
+                </a>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FInicio%2F">
+                    <img src="./source//ICONOS/twitter.png" alt="" height="30px" width=auto>
+                </a>
+         
+         <p>© 2024 Aprender de la vida</p>
     </footer>
 </body>
 </html>

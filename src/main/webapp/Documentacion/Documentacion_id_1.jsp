@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Examen/stylebase.css">
+    <link rel="stylesheet" href="/Examen/styledalto.css">
     <title>Curso de Python</title>
     <%
         String idInfoActual = request.getParameter("id") != null ? request.getParameter("id") : "1";
@@ -89,7 +89,7 @@
     	<script>
 	        function cargarEstiloDaltonismo() {
 	            var stylesheet = document.getElementById('stylesheet');
-	            stylesheet.href = '../styledalto.css'; 
+	            stylesheet.href = '../stylebase.css'; 
 	        }
 	    </script>
 </body>
