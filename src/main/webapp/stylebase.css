@@ -1,0 +1,179 @@
+@charset "ISO-8859-1";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3ddd2; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+form {
+    text-align: center; 
+    margin-bottom: 20px;
+}
+nav {
+    background-color: #333; 
+    padding: 10px 0; 
+    text-align: center;
+}
+
+nav .enlaces a {
+	
+    color: #fff; 
+    text-decoration: none; 
+    margin: 0 10px; 
+    padding: 8px 12px; 
+    border-radius: 5px; 
+}
+
+nav .enlaces a[href="perfil.jsp"] {
+    background-color: #4CAF50; 
+     
+}
+nav .enlaces a[href="index.jsp"] {
+    background-color: #4CAF50; 
+   
+}
+
+nav .enlaces a:hover {
+    background-color: #555; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+}
+.content {
+    display: flex; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}	
+.main-content {
+    flex: 1; 
+}
+
+.image-container {
+    flex: 0 0 30%; 
+    margin-left: 20px; 
+}
+footer{
+	background-color: #333;
+	color: #fff;
+}
+
+.cursos {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.curso-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.curso-imagen {
+    max-width: 30%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.curso-info {
+    flex: 1;
+}
+
+.curso-info h3 {
+    margin-top: 0;
+}
+
+.curso-info p {
+    margin-bottom: 10px;
+}
+
+.curso-info a {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.curso-info a:hover {
+    background-color: #56e3eb;
+}
+
+.info {		
+			text-decoration: none;
+            background-color: #f0f0f0;
+            padding: 40px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+}
+
+.certificado {
+    text-align: center;
+     background-color: #f0f0f0;
+}
+
+.certificado h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.certificado p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
