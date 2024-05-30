@@ -21,6 +21,14 @@
             <h1>Aprender de Vidas</h1>
             <img src="source/logo.jpg" alt="Imagen 1" style="max-width: 10%; height: auto;">
         </header>
+        <p>
+		    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+		        <img style="border:0;width:88px;height:31px"
+		            src="http://jigsaw.w3.org/css-validator/images/vcss"
+		            alt="¡CSS Válido!" />
+		    </a>
+		</p>
+     
                 	<input  type="submit" value="Daltonismo" onclick="cargarEstiloDaltonismo()">
         	<div class="content">
 		        <div class="main-content">
